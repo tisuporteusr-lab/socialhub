@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Business Voice Podcast</title>
+    
+    <!-- Meta tags para o WhatsApp (Preview) -->
+    <meta property="og:title" content="Family Business Voice Podcast">
+    <meta property="og:description" content="Escute e siga o nosso podcast em todas as plataformas!">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .top-banner {
+            background-color: #000066;
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        @media (min-width: 640px) {
+            .top-banner {
+                height: 140px;
+            }
+        }
+        .main-card {
+            background: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            margin-top: 45px;
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+        }
+        @media (min-width: 640px) {
+            .main-card {
+                margin-top: 55px;
+                border-radius: 2rem;
+            }
+        }
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            background: #ffffff;
+            overflow: hidden;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+        }
+        @media (min-width: 640px) {
+            .logo-container {
+                width: 100px;
+                height: 100px;
+                top: -50px;
+            }
+        }
+        .link-row {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: #1f2937;
+            border: 1px solid #f1f5f9;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+        @media (min-width: 640px) {
+            .link-row {
+                padding: 0.875rem 1.125rem;
+            }
+        }
+        .link-row:hover {
+            background-color: #f0f7ff;
+            transform: translateY(-2px);
+            border-color: #e0e7ff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .icon-circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.875rem;
+            flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        @media (min-width: 640px) {
+            .icon-circle {
+                width: 42px;
+                height: 42px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 sm:p-8">
+
+    <div class="top-banner"></div>
+
+    <div class="main-card">
+        
+        <!-- PARTE SUPERIOR (BRANCA) -->
+        <div class="px-5 sm:px-8 pt-10 sm:pt-12 pb-4 sm:pb-5">
+            <!-- LOGO CIRCULAR -->
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+            </div>
+
+            <!-- CABEÇALHO -->
+            <header class="text-center">
+                <h1 class="text-xl sm:text-2xl font-bold text-slate-900 mb-1 tracking-tight">Family Business Voice</h1>
+                <p class="text-slate-600 font-semibold text-xs sm:text-sm mb-2">🎙️ Por @nelsoncuryfilho</p>
+                <p class="text-slate-500 text-[11px] sm:text-xs leading-relaxed max-w-xs mx-auto">
+                    O podcast que traz cases e conversas com grandes especialistas e acionistas sobre negócios, família e legado.
+                </p>
+            </header>
+        </div>
+
+        <!-- LINHA SEPARADORA -->
+        <hr class="border-t-2 border-slate-100">
+
+        <!-- PARTE INFERIOR (CINZA CLARO) -->
+        <div class="bg-slate-100/60 px-5 sm:px-8 pt-4 sm:pt-5 pb-5 sm:pb-8 rounded-b-[1.5rem] sm:rounded-b-[2rem]">
+            <!-- SEÇÃO LINKS -->
+            <div class="mb-0">
+                <!-- <h2 class="text-slate-900 font-bold text-sm sm:text-base mb-2 px-1">Encontre-me no:</h2> -->
+                
+                <div class="space-y-2">
+                    <!-- SPOTIFY -->
+                    <a href="https://open.spotify.com/show/0ONo878WYUB2tv6lCKDlRo?si=16hT8KGgR5y3ZEPhmzxQNA&nd=1&dlsi=1b780149c4ac4381" target="_blank" class="link-row group">
+                        <div class="icon-circle bg-[#1DB954]">
+                            <img src="https://cdn.simpleicons.org/spotify/white" alt="Spotify" class="w-4 h-4 sm:w-5 sm:h-5" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Spotify</h3>
+                            <p class="text-[9px] sm:text-[10px] text-slate-400">Family Business Voice | Podcast</p>
+                        </div>
+                        <svg class="w-3 h-3 text-slate-300 group-hover:text-indigo-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+
+                    <!-- YOUTUBE -->
+                    <a href="https://www.youtube.com/@FamilyBusinessVoice" target="_blank" class="link-row group">
+                        <div class="icon-circle bg-[#FF0000]">
+                            <img src="https://cdn.simpleicons.org/youtube/white" alt="YouTube" class="w-4 h-4 sm:w-5 sm:h-5" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 text-xs sm:text-sm">YouTube</h3>
+                            <p class="text-[9px] sm:text-[10px] text-slate-400">Family Business Voice | Podcast</p>
+                        </div>
+                        <svg class="w-3 h-3 text-slate-300 group-hover:text-indigo-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+
+                    <!-- INSTAGRAM -->
+                    <a href="https://instagram.com/familybusinessvoice/" target="_blank" class="link-row group">
+                        <div class="icon-circle bg-[#E4405F]">
+                            <img src="https://cdn.simpleicons.org/instagram/white" alt="Instagram" class="w-4 h-4 sm:w-5 sm:h-5" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Instagram</h3>
+                            <p class="text-[9px] sm:text-[10px] text-slate-400">Family Business Voice | Podcast</p>
+                        </div>
+                        <svg class="w-3 h-3 text-slate-300 group-hover:text-indigo-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+
+                    <!-- TIKTOK -->
+                    <a href="https://www.tiktok.com/@familybusinessvoice?is_from_webapp=1&sender_device=pc" target="_blank" class="link-row group">
+                        <div class="icon-circle bg-[#000000]">
+                            <img src="https://cdn.simpleicons.org/tiktok/white" alt="TikTok" class="w-4 h-4 sm:w-5 sm:h-5" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 text-xs sm:text-sm">TikTok</h3>
+                            <p class="text-[9px] sm:text-[10px] text-slate-400">Family Business Voice | Podcast</p>
+                        </div>
+                        <svg class="w-3 h-3 text-slate-300 group-hover:text-indigo-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+
+                    <!-- LINKEDIN -->
+                    <a href="https://www.linkedin.com/in/nelson-cury-filho-35481029/?locale=en" target="_blank" class="link-row group">
+                        <div class="icon-circle bg-[#0077B5]">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-4 h-4 sm:w-5 sm:h-5" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-slate-900 text-xs sm:text-sm">LinkedIn</h3>
+                            <p class="text-[9px] sm:text-[10px] text-slate-400">Nelson Cury Filho | Host do Podcast Family Business Voice</p>
+                        </div>
+                        <svg class="w-3 h-3 text-slate-300 group-hover:text-indigo-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RODAPÉ -->
+            <footer class="mt-6 sm:mt-8 text-center">
+                <p class="text-slate-400 text-[8px] sm:text-[9px] uppercase tracking-[0.2em] font-bold">Family Business Voice</p>
+            </footer>
+        </div>
+
+</body>
+</html>
